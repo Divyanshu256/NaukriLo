@@ -18,11 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-<<<<<<< HEAD
         "https://naukrilo.onrender.comapi/v1/user/login",
-=======
-        "https://naukrilo.onrender.com/api/v1/user/login",
->>>>>>> 4bf1c357cbdb0ba1d7eae546a301b8697f64c992
         { email, password, role },
         {
           headers: {
