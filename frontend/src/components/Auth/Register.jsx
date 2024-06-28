@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://naukri-lo-vjhb.vercel.app//api/v1/user/register",
+        "https://naukrilo.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {

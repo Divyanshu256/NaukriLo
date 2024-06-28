@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://naukri-lo-vjhb.vercel.app//api/v1/user/getuser",
+          "https://naukrilo.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }

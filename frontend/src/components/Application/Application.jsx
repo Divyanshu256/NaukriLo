@@ -35,7 +35,7 @@ const Application = () => {
 
     try {
       const { data } = await axios.post(
-        "https://naukri-lo-vjhb.vercel.app//api/v1/application/post",
+        "https://naukrilo.onrender.com/api/v1/application/post",
         formData,
         {
           withCredentials: true,

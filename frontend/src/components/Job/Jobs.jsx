@@ -10,7 +10,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get("https://naukri-lo-vjhb.vercel.app//api/v1/job/getall", {
+        .get("https://naukrilo.onrender.com/api/v1/job/getall", {
           withCredentials: true,
         })
         .then((res) => {
