@@ -15,14 +15,14 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "*",
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
 );
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://naukrilo-1.onrender.com');
+  res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();

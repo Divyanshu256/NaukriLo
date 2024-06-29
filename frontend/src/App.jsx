@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://naukrilo-1.onrender.com/api/v1/user/getuser",
+          "/api/user/getuser",
           {
             withCredentials: true,
           }
